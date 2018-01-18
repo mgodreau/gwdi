@@ -1,0 +1,102 @@
+// #A8D8DE
+// #3370AB
+// #D7604D
+
+// colors
+$blue: #A8D8DE;
+$gray: #233340;
+$darkblue: #3370AB;
+$salmon: #D7604D;
+
+// fonts
+$sans-serif: Helvetica, sans-serif;
+
+$large-font: 40px;
+$medium-font: 30px;
+$small-font: 15px;
+
+// mixins
+@mixin large-text {
+  font-size: 45px;
+  font-family: monospace;
+  color: $blue;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body{
+  font-family: $sans-serif;
+  color: $gray;
+}
+
+h1, h2, h3{
+  @include large-text;
+}
+
+h2{
+  color: $darkblue;
+}
+
+nav{
+  a{
+    color: green;
+    text-decoration: none;
+    &:hover{
+      color: red;
+    }
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    display: inline-block;
+  }
+}
+
+
+
+a{
+  color: purple;
+  font-size: $small-font +5px;
+}
+
+
+button{
+  @include border-radius(5px);
+  background-color: $salmon;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  &:hover{
+    background-color: darken($salmon, 10%)
+  }
+}
+
+
+.message{
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.warning{
+  @extend .message;
+  border-color: yellow;
+}
+
+.success{
+  @extend .message;
+  border-color: green;
+}
+
+.error{
+  @extend .message;
+  border-color: red;
+}

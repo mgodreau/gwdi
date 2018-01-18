@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <h1>AJAX Playground</h1>
+
+  <div class="content"></div>
+
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+
+    var query = prompt('What do you want to search for?');
+
+    var options = {
+      url: 'http://api.giphy.com/v1/gifs/search',
+      //method: 'get',
+      data: {
+        api_key: 'dc6zaTOxFJmzC',
+        q: query
+      }
+    };
+
+    var request = $.ajax(options);
+
+    request.done(function(response) {
+      console.log('data', response.data[0].images.downsized.url);
+
+      var $img = $('<img />').attr('src', response.data[0].images.downsized.url);
+
+      $('.content').html($img);
+    });
+
+    request.fail(function(jqXHR, textStatus, errorThrown) {
+      alert('oh no!');
+      console.log(textStatus, errorThrown);
+    });
+
+    request.always(function() {
+      console.log('I always run no matter what');
+    });
+  });
+
+  </script>
+  </body>
+</html>

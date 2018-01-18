@@ -1,0 +1,44 @@
+div{
+  height: 100px;
+  width: 100px;
+  border: 10px solid black;
+  border-right: none;
+  margin: 10px auto;
+  padding: 25px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#square1{
+  background: orange;
+  float: left;
+}
+
+#square2{
+  background-color: purple;
+}
+
+#square3{
+  background-color: blue;
+  visibility: hidden;
+}
+
+#square4{
+  background-color: green;
+  box-sizing:content-box;
+}
+
+.incorrect{
+  display: none;
+}
+
+li{
+  background: teal;
+  width:100px;
+  /*display: inline-block;*/
+  float: right;
+}
+
+.clearfix{
+  overflow: auto;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List Front End</title>
+    <style media="screen">
+      .delete-link {
+        margin-left: 5px;
+      }
+
+      .done {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <form id="newTodo">
+      <input type="text" name="task" id="task">
+      <input type="submit" value="Create Todo">
+    </form>
+
+    <ul id="todos"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

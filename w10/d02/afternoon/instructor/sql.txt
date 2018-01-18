@@ -1,0 +1,24 @@
+CREATE TABLE instructors(
+  ID SERIAL PRIMARY KEY NOT NULL,
+  NAME TEXT NOT NULL,
+  WEBSITE CHAR(50)
+);
+
+CREATE TABLE students(
+  ID SERIAL PRIMARY KEY,
+  NAME TEXT NOT NULL,
+  AGE INT,
+  ADDRESS TEXT
+);
+
+-- CRUD COMMANDS
+INSERT
+SELECT
+UPDATE
+DELETE
+
+INSERT INTO table_name VALUES (column_values);
+INSERT INTO students VALUES (1, 'Jack Sparrow', 28, '50 carribbean');
+
+SELECT column_name FROM table_name;
+SELECT * FROM students WHERE name = 'Jack Sparrow';

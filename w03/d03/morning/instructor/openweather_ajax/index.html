@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax Open Weather Practice</title>
+  </head>
+  <body>
+
+    <form id="zip-form">
+      <input type="text" name="name" value="" id="zipcode" placeholder="Enter your zipcode">
+      <button type="submit" name="button">Get Weather</button>
+    </form>
+
+    <div id="forecast" style="display:none">
+      <h1>Here's the weather for <span id="city"></span> today!</h1>
+      <p>Temperature: <span id="temp"></span> degrees</p>
+      <p>
+        Sunrise: <span id="sunrise"></span>
+        <br>
+        Sunset: <span id="sunset"></span>
+      </p>
+      <p>Weather for today: <span id="description"></span></p>
+      <p>
+        Latitude: <span id="lat"></span>
+        <br>
+        Longitude: <span id="lon"></span>
+      </p>
+      <img src="" alt="" id="weather-image">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

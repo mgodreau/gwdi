@@ -1,0 +1,48 @@
+
+#green{
+  color: green;
+}
+
+
+body > .red {
+  color: red;
+}
+
+.red{
+  color:pink;
+}
+
+
+.mammal{
+  color:red;
+  background-color: black;
+}
+
+.bird{
+  color:blue;
+}
+
+.fish{
+  color:orange;
+}
+
+#mouse{
+  color: gray;
+}
+
+#canary{
+  color: orangered;
+}
+
+.bird.red{
+  color: yellow;
+}
+
+ul{
+  border: 3px dotted plum;
+  border-radius: 10px;
+}
+
+li{
+  border-top: 3px seagreen solid;
+}

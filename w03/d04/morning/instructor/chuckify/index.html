@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chuckify</title>
+  </head>
+  <body>
+
+    <form id="jokeForm">
+      <input type="text" id="firstName" placeholder="First Name">
+      <input type="text" id="lastName" placeholder="Last Name">
+      <select id="numberOfJokes">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <input type="submit" value="Get Joke(s)">
+    </form>
+
+    <h1>Featured Joke</h1>
+    <ul id="featuredJokes"></ul>
+
+    <h1>Previous Joke</h1>
+    <ul id="previousJokes"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
